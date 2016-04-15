@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/white"
+     >
+
+    <TextView
+        android:id="@+id/count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="30"
+        android:textSize="88dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/count"
+        android:layout_alignBottom="@+id/count"
+        android:layout_toLeftOf="@+id/count"
+        android:text="剩余"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+         android:weightSum="4"  >
+
+        <EditText
+            android:id="@+id/answer"
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_weight="3"
+           android:background="@drawable/white"
+            android:textColor="@drawable/dark" />
+
+        <Button
+            android:id="@+id/tijiao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="提交" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/suan"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/count"
+        android:gravity="center"
+        android:text="Large Text"
+        android:textColor="@drawable/dark"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_marginBottom="75dp"
+        android:layout_marginRight="21dp"
+        android:textColor="@drawable/blue"
+        android:text="正确率"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/zquelv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:text="0%"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@drawable/dark"
+        android:textSize="35dp" />
+
+</RelativeLayout>
